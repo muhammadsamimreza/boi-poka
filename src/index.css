@@ -9,3 +9,7 @@
 *{
     font-family: "Playfair Display", serif;
 }
+.active{
+ background-color: teal;
+ color: white;
+}

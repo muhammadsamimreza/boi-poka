@@ -1,27 +1,26 @@
 import React from "react";
 import Container from "../Container/Container";
 import { Link, NavLink } from "react-router";
-import '../../App.css'
 const Navbar = () => {
-  const link = (
-    <>
-      <li>
-        <NavLink>
-          <a>Home</a>
-        </NavLink>
-      </li>
-      <li>
-        <NavLink>
-          <a>Listed Books</a>
-        </NavLink>
-      </li>
-      <li>
-        <NavLink>
-          <a>Pages to Read</a>
-        </NavLink>
-      </li>
-    </>
-  );
+  // // const link = (
+  // //   <>
+  // //     <li>
+  // //       <NavLink to='/'>
+  // //         Home
+  // //       </NavLink>
+  // //     </li>
+  // //     <li>
+  // //       <NavLink>
+  // //         Listed Books
+  // //       </NavLink>
+  // //     </li>
+  // //     <li>
+  // //       <NavLink>
+  // //         Pages to Read
+  // //       </NavLink>
+  // //     </li>
+  // //   </>
+  // );
   return (
     <div className="">
       <Container>
@@ -52,16 +51,25 @@ const Navbar = () => {
               <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-              >
-               {link}
-              </ul>
+              ></ul>
             </div>
-            <Link to="/">
-              <a className="text-2xl font-bold">BoiPoka</a>
+            <Link to="/" className="text-2xl font-bold">
+              {" "}
+              BoiPoka
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">{link}</ul>
+            <ul className="menu menu-horizontal px-1 gap-4">
+              <li>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/booklist">Listed Books</NavLink>
+              </li>
+              <li>
+                <NavLink to="/read">Pages to Read</NavLink>
+              </li>
+            </ul>
           </div>
           <div className="navbar-end">
             <a className="btn">Button</a>

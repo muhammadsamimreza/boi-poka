@@ -12,7 +12,7 @@ const HeroSection = () => {
               src={heroImage}
             />
             <div className="space-y-10 mt-5 lg:mt-0 lg:space-y-14 text-center lg:text-left">
-              <h1 className="text-5xl font-bold">Books to freshen up <br /> your bookshelf</h1>
+              <h1 className="text-5xl font-bold space-y-2"><p>Books to freshen up</p><p>your bookshelf</p></h1>
               <button className="btn btn-primary">Get Started</button>
             </div>
           </div>

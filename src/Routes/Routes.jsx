@@ -4,6 +4,8 @@ import App from '../App';
 import Root from '../components/Root/Root';
 import Home from '../pages/Home/Home';
 import ErrorPage from '../pages/ErrorPage/ErrorPage';
+import ListedBooks from '../pages/ListedBooks/ListedBooks';
+import ReadBooks from '../pages/ReadBooks/ReadBooks';
 
 const router = createBrowserRouter([
     {
@@ -15,7 +17,15 @@ const router = createBrowserRouter([
             index: true,
             path: '/',
             Component: Home
-           }
+           },
+           {
+            path: '/booklist',
+            Component: ListedBooks
+           },
+           {
+            path: '/read',
+            Component: ReadBooks
+           },
         ]
     }
 ]) 
