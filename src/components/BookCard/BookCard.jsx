@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 import './BookCard.css'
+import { Link } from 'react-router';
 const BookCard = ({book}) => {
     const {image,bookName,author,rating } = book;
     return (
@@ -23,6 +24,9 @@ const BookCard = ({book}) => {
                     <span>Category</span>
                     <div className='flex items-center gap-2'><p>{rating} </p><Star className='w-4'></Star></div>
                     
+                </div>
+                <div className='flex justify-center'>
+                    <Link to='/bookdetails' className='btn w-full bg-teal-400  text-white'>Detalis</Link>
                 </div>
                    
             </div>

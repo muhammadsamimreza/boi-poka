@@ -2,7 +2,7 @@ import React from "react";
 import heroImage from "../../assets/heroImage.png";
 import Container from "../../components/Container/Container";
 import './BookDetails.css'
-const BookDetals = () => {
+const BookDetals = () => { 
   return (
     <div>
       <div className="pageFont">
