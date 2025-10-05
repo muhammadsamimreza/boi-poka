@@ -3,7 +3,7 @@ import { Star } from 'lucide-react';
 import './BookCard.css'
 import { Link } from 'react-router';
 const BookCard = ({book}) => {
-    const {image,bookName,author,rating } = book;
+    const {image,bookName,author,rating, bookId } = book;
     return (
         <div className='flex justify-center pageFont p-2'>
             <div className='w-full bg-base-100 rounded-2xl shadow-md p-4 border border-gray-200'>
@@ -26,7 +26,7 @@ const BookCard = ({book}) => {
                     
                 </div>
                 <div className='flex justify-center'>
-                    <Link to='/bookdetails' className='btn w-full bg-teal-400  text-white'>Detalis</Link>
+                    <Link to={`/bookdetails/${bookId}`} className='btn w-full bg-teal-400  text-white'>Detalis</Link>
                 </div>
                    
             </div>
