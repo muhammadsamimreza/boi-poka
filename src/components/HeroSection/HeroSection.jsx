@@ -4,7 +4,7 @@ import heroImage from "../../assets/heroImage.png"
 
 const HeroSection = () => {
   return (
-    <div className="">
+    <div className="my-5">
       <Container>
         <div className="py-10 backColor rounded-2xl">
           <div className="hero-content justify-around flex-col lg:flex-row-reverse">
