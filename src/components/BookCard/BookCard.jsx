@@ -26,7 +26,7 @@ const BookCard = ({book}) => {
                     
                 </div>
                 <div className='flex justify-center'>
-                    <Link to={`/bookdetails/${bookId}`} className='btn w-full bg-teal-400  text-white'>Detalis</Link>
+                    <Link to={`/bookdetails/${bookId}`} className='btn w-full bg-teal-400 hover:bg-teal-500  text-white'>Detalis</Link>
                 </div>
                    
             </div>
