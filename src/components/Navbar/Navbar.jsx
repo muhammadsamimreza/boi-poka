@@ -1,28 +1,11 @@
 import React from "react";
 import Container from "../Container/Container";
 import { Link, NavLink } from "react-router";
+import './Navbar.css'
 const Navbar = () => {
-  // // const link = (
-  // //   <>
-  // //     <li>
-  // //       <NavLink to='/'>
-  // //         Home
-  // //       </NavLink>
-  // //     </li>
-  // //     <li>
-  // //       <NavLink>
-  // //         Listed Books
-  // //       </NavLink>
-  // //     </li>
-  // //     <li>
-  // //       <NavLink>
-  // //         Pages to Read
-  // //       </NavLink>
-  // //     </li>
-  // //   </>
-  // );
+  
   return (
-    <div className="">
+    <div className="pageFont">
       <Container>
         <div className="navbar">
           <div className="navbar-start">
@@ -71,8 +54,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="navbar-end">
-            <a className="btn">Button</a>
+          <div className="navbar-end gap-3">
+            <a className="btn bg-green-500 text-white font-medium">Log In</a>
+            <a className="btn bg-teal-400 text-white font-medium">Sign Up</a>
           </div>
         </div>
       </Container>

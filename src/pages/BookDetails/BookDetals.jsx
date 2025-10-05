@@ -1,14 +1,15 @@
 import React from "react";
 import heroImage from "../../assets/heroImage.png";
 import Container from "../../components/Container/Container";
+import './BookDetails.css'
 const BookDetals = () => {
   return (
     <div>
-      <div className="">
+      <div className="pageFont">
         <Container>
           <div className="rounded-2xl">
             <div className="hero-content flex-col lg:flex-row gap-5">
-              <div className="w-1/2 flex justify-center backColor py-14 rounded-2xl">
+              <div className="w-1/2 flex justify-center backColor py-16 rounded-2xl">
                 <img className="" src={heroImage} />
               </div>
               <div className="w-1/2 flex justify-center">

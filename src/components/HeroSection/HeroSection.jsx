@@ -1,10 +1,10 @@
 import React from "react";
 import Container from "../Container/Container";
 import heroImage from "../../assets/heroImage.png"
-
+import './HeroSection.css'
 const HeroSection = () => {
   return (
-    <div className="my-5">
+    <div className="my-5 fontPrimary">
       <Container>
         <div className="py-10 backColor rounded-2xl">
           <div className="hero-content justify-around flex-col lg:flex-row-reverse">
@@ -13,7 +13,7 @@ const HeroSection = () => {
             />
             <div className="space-y-10 mt-5 lg:mt-0 lg:space-y-14 text-center lg:text-left">
               <h1 className="text-5xl font-bold space-y-2"><p>Books to freshen up</p><p>your bookshelf</p></h1>
-              <button className="btn btn-primary">Get Started</button>
+              <button className="pageFont btn bg-green-500 text-white font-semibold">View The List</button>
             </div>
           </div>
         </div>

@@ -1,14 +1,12 @@
-import React from "react";
 import HeroSection from "../../components/HeroSection/HeroSection";
-import BookCard from "../../components/BookCard/BookCard";
-import BookDetals from "../BookDetails/BookDetals";
-
+import AllBooks from "../../components/AllBooks/AllBooks"
+import { useLoaderData } from "react-router";
 const Home = () => {
+  const allBooksdata = useLoaderData();
   return (
-    <div>
-      <BookDetals></BookDetals>
-      <BookCard></BookCard>
+    <div className="">
       <HeroSection></HeroSection>
+      <AllBooks allBooksdata={allBooksdata}></AllBooks>
     </div>
   );
 };
