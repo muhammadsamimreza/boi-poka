@@ -3,6 +3,7 @@ import Container from "../../components/Container/Container";
 import "./BookDetails.css";
 import { useLoaderData, useParams } from "react-router"; 
 import { addToLocalStorage } from "../../Utility/AddToLocalStorage";
+import { addWishToLocalStorage } from "../../Utility/AddWishListLocalStarage";
 const BookDetals = () => {
   const bookIdStr = useParams();
   const booksId = parseInt(bookIdStr.id);
@@ -12,6 +13,10 @@ const BookDetals = () => {
   const handleReadList=(id)=>{
       addToLocalStorage(id)
   }
+  const handleWishList=(id)=>{
+      addWishToLocalStorage(id)
+  }
+
   return (
     <div>
       <div className="pageFont">
@@ -71,7 +76,7 @@ const BookDetals = () => {
                     </div>
                     <div className="flex gap-5 my-5">
                       <button onClick={()=>handleReadList(bookId)} className="btn btn-outline">Read</button>
-                      <button className="btn bg-teal-500 text-white">
+                      <button onClick={()=>handleWishList(bookId)} className="btn bg-teal-500 text-white">
                         WishList
                       </button>
                     </div>
