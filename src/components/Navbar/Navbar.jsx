@@ -58,9 +58,6 @@ const Navbar = () => {
               <li>
                 <NavLink to="/booklist">Listed Books</NavLink>
               </li>
-              <li>
-                <NavLink to="/read">Pages to Read</NavLink>
-              </li>
             </ul>
           </div>
           <div className="navbar-end gap-3">

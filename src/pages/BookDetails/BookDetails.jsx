@@ -15,6 +15,7 @@ const BookDetals = () => {
   }
   const handleWishList=(id)=>{
       addWishToLocalStorage(id)
+      alert(" Add to Wish List")
   }
 
   return (

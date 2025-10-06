@@ -31,11 +31,7 @@ const router = createBrowserRouter([
             loader: ()=> fetch('../booksData.json'),
             Component: ListedBooks
            },
-           {
-            path: '/read',
-            Component: ReadBooks
-           },
-          
+
         ]
     }
 ]) 

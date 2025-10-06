@@ -1,8 +1,14 @@
 import React from "react";
-import { Star } from "lucide-react";
 import { Link } from "react-router";
-const WishCard = ({ book }) => {
+import { deleteWishFromLocalStorage } from "../../Utility/AddWishListLocalStarage";
+const WishCard = ({ book, handleDeleteWish }) => {
   const { image, bookName, author, bookId } = book;
+
+  const handleDelete=(id)=>{
+        deleteWishFromLocalStorage(id)
+        handleDeleteWish(id)
+  }
+
   return (
     <div className="flex justify-center pageFont">
       <div
@@ -26,13 +32,16 @@ const WishCard = ({ book }) => {
             <h3 className="font-semibold text-[#131313bd]">By : {author} </h3>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex items-center gap-3">
             <Link
               to={`/bookdetails/${bookId}`}
-              className="btn w-full bg-teal-400 hover:bg-teal-500  text-white"
+              className="btn bg-teal-400 hover:bg-teal-500  text-white"
             >
               Detalis
             </Link>
+            <button onClick={()=>handleDelete(bookId)} className="btn bg-red-400 hover:bg-red-500  text-white">
+              Delete
+            </button>
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ const getDataFromLocalStorage = () => {
     return getBookData;
   } else {
     return [];
-  }
+  } 
 };
 
 const addToLocalStorage = (id) => {
@@ -19,5 +19,10 @@ const addToLocalStorage = (id) => {
 
   }
 };
+const deleteReadFromLocalStorage = (id) => {
+  const savedWishList = getDataFromLocalStorage();
+  const updatedWishList = savedWishList.filter(bookId => bookId !== id);
+  localStorage.setItem("readList", JSON.stringify(updatedWishList));
+};
 
-export { addToLocalStorage, getDataFromLocalStorage };
+export { addToLocalStorage, getDataFromLocalStorage, deleteReadFromLocalStorage };
