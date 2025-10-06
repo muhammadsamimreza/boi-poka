@@ -3,7 +3,7 @@ import Container from "../Container/Container";
 import './Footer.css'
 const Footer = () => {
   return (
-    <div className="backColor2 my-5 fontPrimary">
+    <div className="backColor2 mt-5 fontPrimary">
       <Container>
         <footer className="footer footer-horizontal footer-center text-base-content rounded p-10">
           <nav className="grid grid-flow-col gap-4">
@@ -52,7 +52,7 @@ const Footer = () => {
           <aside>
             <p>
               Copyright © {new Date().getFullYear()} - All right reserved by
-              ACME Industries Ltd
+              BoiPoaka Publications
             </p>
           </aside>
         </footer>
