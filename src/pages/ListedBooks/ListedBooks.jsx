@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { getDataFromLocalStorage } from "../../Utility/AddToLocalStorage";
 import BookCard from "../../components/BookCard/BookCard";
 import { getWishDataFromLocalStorage } from "../../Utility/AddWishListLocalStarage";
-
+import WishCard from "../WishCard/WishCard";
 const ListedBooks = () => {
   const [readBook, setReadBook] = useState([])
   const [wishBook, setWishBook] = useState([])
@@ -44,9 +44,9 @@ const ListedBooks = () => {
           </TabPanel>
           <TabPanel>
             <h2 className="text-center text-2xl font-semibold">Wish List: {wishBook.length}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="">
               {
-                wishBook.map(book=> <BookCard key={book.bookId} book={book}></BookCard>)
+                wishBook.map(book=> <WishCard key={book.bookId} book={book}></WishCard>)
               }
             </div>
           </TabPanel>
