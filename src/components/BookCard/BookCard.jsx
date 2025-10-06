@@ -3,7 +3,7 @@ import { Star } from 'lucide-react';
 import './BookCard.css'
 import { Link } from 'react-router';
 const BookCard = ({book}) => {
-    const {image,bookName,author,rating, bookId } = book;
+    const {image,bookName,author,rating, bookId,totalPages } = book;
     return (
         <div className='flex justify-center pageFont p-2'>
             <div className='w-full bg-base-100 rounded-2xl shadow-md p-4 border border-gray-200'>
@@ -15,6 +15,7 @@ const BookCard = ({book}) => {
                 <div className='flex gap-5 my-5'>
                     <div className='flex justify-center items-center bg-green-100 px-2 h-[20px] rounded-xl text-xs font-medium text-green-700'>Young Adult</div>
                     <div className='flex justify-center items-center bg-green-100 px-2 h-[20px] rounded-xl text-xs font-medium text-green-700'>Identity</div>
+                    <div className='flex justify-center items-center bg-green-100 px-2 h-[20px] rounded-xl text-sm font-medium text-black'>{totalPages}</div>
                 </div>
                 <div className='my-4 space-y-2'>
                     <h1 className='text-[22px] font-bold fontPrimary'>{bookName}</h1>
