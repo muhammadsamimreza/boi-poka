@@ -50,11 +50,11 @@ const ListedBooks = () => {
                  readBook.length === 0 ? (
                   <p className="min-h-[calc(100vh-415px)]"></p>
                 ) : (
-                  readBook.map(book=> <WishCard 
+                  readBook.map(book=> <ReadBooks 
                   key={book.bookId} 
                   book={book}
                   handleDeleteRead={handleDeleteRead}
-                  ></WishCard>)
+                  ></ReadBooks>)
                 )
               }
             </div>
